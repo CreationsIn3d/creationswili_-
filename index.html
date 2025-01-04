@@ -57,6 +57,19 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
+            margin: 10px 0;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .image-grid img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
         }
         footer {
             background-color: #0277bd;
@@ -81,6 +94,10 @@
                 background: #0277bd;
                 color: white;
                 border-radius: 5px;
+            }
+            .image-grid {
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
@@ -115,16 +132,15 @@
             <h2 style="text-align: center;">Impresión 3D</h2>
             <p>Ofrecemos servicios de impresión 3D de alta calidad para tus proyectos personalizados. Desde prototipos hasta productos finales, nuestros impresores 3D garantizan precisión y detalle.</p>
             <h2><span style="color: #0000ff;">Llaveros:</span></h2>
-            <p><img src="https://github.com/CreationsIn3d/IMAGENES/blob/main/1.jpg?raw=true" alt="1.jpg" width="207" height="276" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://github.com/CreationsIn3d/IMAGENES/blob/main/11.jpg?raw=true" alt="" width="368" height="276" />&nbsp;<img src="https://github.com/CreationsIn3d/IMAGENES/blob/main/12.jpg?raw=true" alt="" width="207" height="275" /></p>
-            <p>&nbsp;</p>
+            <div class="image-grid">
+                <img src="https://github.com/CreationsIn3d/IMAGENES/blob/main/1.jpg?raw=true" alt="1.jpg" />
+                <img src="https://github.com/CreationsIn3d/IMAGENES/blob/main/11.jpg?raw=true" alt="" />
+                <img src="https://github.com/CreationsIn3d/IMAGENES/blob/main/12.jpg?raw=true" alt="" />
+            </div>
             <h2><span style="color: #0000ff;">Litofanias (fotos con luz led):</span></h2>
-            <p><span style="color: #0000ff;"><img src="https://github.com/CreationsIn3d/IMAGENES/blob/main/18.jpg?raw=true" alt="" width="200" height="266" /></span></p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
+            <div class="image-grid">
+                <img src="https://github.com/CreationsIn3d/IMAGENES/blob/main/18.jpg?raw=true" alt="" />
+            </div>
         </section>
         <section id="grabadoycorte" class="section">
             <h2>Grabado y Corte Láser</h2>
